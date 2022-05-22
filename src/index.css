@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Neucha&family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000; 
+}
+
+@media screen and (max-width: 468px) {
+  body {
+    font-size: 14px;
+  }
+} 
+
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+}

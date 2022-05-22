@@ -1,0 +1,95 @@
+.userData {
+  margin-top: 40px;
+  width: 292.08px;
+  height: 431.98px;
+  text-align: left;
+}
+
+.userName {
+  margin: 28px 0 12px 0;
+  height: 34px;
+  font-weight: 600;
+  font-size: 1.625em;
+  line-height: 130%;
+}
+
+.userAvatar {
+  max-width: 280px;
+  max-height: 280px;
+  border-radius: 50%;
+}
+
+.userData a {
+  height: 28.74px;
+  text-decoration: none;
+  font-size: 1.125em;
+  line-height: 22px;
+  color: #0064EB;
+}
+
+/* UserStatistics styles */
+
+.trackingStatistics {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 24.24px;
+}
+
+.followersContainer {
+  display: flex;
+  align-items: center;
+}
+
+.followersContainer p {
+  padding-left: 8px;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 767px) {
+  .userData {
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .userData {
+    margin-top: 20px;
+    width: 250px;
+    height: 370px;
+  }
+
+  .userAvatar {
+    width: 240px;
+    height: 240px;
+  }
+
+  .trackingStatistics {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .userData {
+    margin-top: 10px;
+    width: 200px;
+    height: 330px;
+  }
+
+  .userName {
+    margin: 16px 0 8px 0;
+  }
+
+  .userAvatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .trackingStatistics {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+}

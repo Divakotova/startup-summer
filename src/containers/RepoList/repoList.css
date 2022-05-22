@@ -1,0 +1,192 @@
+.repoWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+  margin-left: 7.25%;
+  max-width: 877px;
+  width: calc(100% - 292.08px);
+}
+
+.repositories {
+  display: flex;
+  flex-direction: column;
+  max-width: 877px;
+}
+
+.repositoriesTitle {
+  margin-bottom: 29px;
+  height: 42px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2em;
+  line-height: 130%;
+}
+
+.repositoriesList {
+  display: flex;
+  flex-direction: column;
+}
+
+.repoContainer {
+  margin-bottom: 24px;
+  width: 100%;
+  height: 112px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.repoContent {
+  padding: 24px 32px;
+}
+
+.repoTitle {
+  text-decoration: none;
+  overflow: hidden;
+  height: 29px;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 29px;
+  color: #0064EB;
+}
+
+.repoDescription {
+  overflow: hidden;
+  margin-top: 16px;
+  height: 19px;
+  line-height: 19px;
+}
+
+/* Paginate styles */
+
+.reposCount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 13px;
+  margin-bottom: 28px;
+}
+
+.reposCount p {
+  min-width: 111px;
+  height: 21px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #808080;
+}
+
+.pagination>ul { 
+align-items: center;
+}
+
+.pagination .page-item.disabled .page-link { 
+  background-color: #F9F9F9;
+  border: none;
+}
+
+.pagination>li>a {
+  padding: 0;  
+  border: none;
+  font-size: 14px;
+  line-height: 21px;
+  background: #F9F9F9;
+  color: #808080;
+}
+
+.pagination>li { 
+  margin-right: 16px;
+}
+
+.pagination>li:last-child { 
+  margin-right: 0;
+}
+
+.pagination>li.active>a {
+  padding: 2px 6px;  
+  border-radius: 3px;
+  background: #0064EB;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.pagination>li>a:active,
+.pagination>li>path:visited {
+ border: none;
+ box-shadow: none;
+}
+
+.pagination>li>a:hover,
+.pagination>li>a:focus {
+  border: none;
+  box-shadow: none;
+}
+
+/* EmptyRepos styles */
+
+.emptyContent {
+  margin: auto;
+  margin-top: 197px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 243px;
+  height: 165px;
+}
+
+@media screen and (max-width: 767px) {
+  .repoWrapper {
+    margin-top: 28px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+  }
+
+  .repoTitle {
+    height: 20px;
+    font-size: 1.125em;
+    line-height: 20px;
+  }
+
+  .emptyContent {
+    margin-top: 0;
+  }
+
+  .pagination>li { 
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .repositories {
+    margin-top: 18px;
+  }
+
+  .repositoriesTitle {
+    margin-bottom: 18px;
+    height: 32px;
+  }
+
+  .repoContainer {
+    margin-bottom: 18px;
+    height: 80px;
+    border-radius: 4px;
+  }
+  
+  .repoContent {
+    padding: 12px 22px;
+  }
+
+  .repoDescription {
+    margin-top: 10px;
+    height: 16px;
+    line-height: 16px;
+  }
+
+  .reposCount {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
